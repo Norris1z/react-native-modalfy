@@ -150,7 +150,7 @@ export type Modal = {
   addListener: ModalListener,
   currentModal: ?ModalName,
   openModal: (modalName: ModalName, params?: Object) => void,
-  closeModal: (modal?: ModalName) => void,
+  closeModal: (modal?: ModalName,onClose: ?()=>void) => void,
   getParams: (modalName: ModalName, fallback?: any) => any,
   removeAllListeners: () => void,
   params?: any,
